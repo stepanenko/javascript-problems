@@ -5,8 +5,8 @@
 // Example: Given nums = [2, 7, 11, 15], target = 9
 // Because nums[0] + nums[1] = 2 + 7 = 9, return [0, 1]
 
-// My solution 1:
-function twoSum(nums, target) {
+// My solution 1 (runtime 108ms):
+function twoSum1(nums, target) {
   for (let i = 0; i < nums.length; i++) {
     for (let j = i + 1; j < nums.length; j++) {
       if (nums[i] + nums[j] === target) {
@@ -16,25 +16,24 @@ function twoSum(nums, target) {
   }
 };
 
-// My solution 2:
-// try to use arr.reduce(acc, el):
+// Solution 2 (runtime 52ms):
+function twoSum2(nums, target) {
+  const comp = {};
+  for (let i = 0; i < nums.length; i++) {
+    if (comp[nums[i]] >= 0) {
+      return [comp[nums[i]], i];
+    }
+    comp[target - nums[i]] = i;
+  }
+};
 
-console.log(twoSum([2, 15, 11, 7, -2], 9)); // works
-// console.log(twoSum([3, 3], 6)); // works
-
-// From comments (fastest runtime solution):
-// const twoSum = function(nums, target) {
-//     const comp = {};
-//     for(let i=0; i<nums.length; i++){
-//         if(comp[nums[i] ]>=0){
-//             return [ comp[nums[i] ] , i]
-//         }
-//         comp[target-nums[i]] = i
-//     }
-// };
+// const output = twoSum2([2, 15, 11, 7, -2], 9);   // [ 0, 3 ]
+const output = twoSum2([3, 3], 6);   // [ 0, 1 ]
+console.log(output);
 
 
-// From comments: O(n) - One-pass Hash Table
+
+// Solution 3: O(n) - One-pass Hash Table
 // var twoSum = function(nums, target) {
 //     let map = new Map;
 //     for (var i = 0; i < nums.length; i++) {
