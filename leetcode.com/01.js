@@ -33,7 +33,7 @@ console.log(output);
 
 
 
-// Solution 3: O(n) - One-pass Hash Table
+// Solution to checkout 3: O(n) - One-pass Hash Table
 // var twoSum = function(nums, target) {
 //     let map = new Map;
 //     for (var i = 0; i < nums.length; i++) {
