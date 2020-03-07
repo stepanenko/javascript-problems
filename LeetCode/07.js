@@ -27,3 +27,4 @@ console.log(output);
 
 
 // https://leetcode.com/problems/reverse-integer/
+// https://www.youtube.com/watch?v=XpvNcex-rc0&list=PLko32sysgiEPGS4bXBRyZMo9ztcHmPI1z&index=7&t=0s
