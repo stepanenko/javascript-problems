@@ -21,9 +21,31 @@ var reverse = function(x) {
   return num;
 };
 
-const output = reverse(-1534236469);
-console.log(output);
 
+
+// To Check:
+let reverse2 = function(x) {    
+  let negative = x < 0;
+  let reversed = 0;
+  
+  if (negative) {
+      x *= -1;
+  }
+  
+  while (x > 0) {
+      reversed = (reversed * 10) + (x % 10);
+      x = Math.floor(x / 10);
+  }
+  
+  if (reversed > (2 ** 31 - 1)) {
+      return 0;
+  }
+  
+  return negative ? (reversed * -1) : reversed;
+};
+
+const output = reverse2(-153469);
+console.log(output);
 
 
 // https://leetcode.com/problems/reverse-integer/
