@@ -23,7 +23,7 @@ var reverse = function(x) {
 
 
 
-// To Check:
+// Solution 2 from comments: (runtime 56ms, memory 35.7MB)
 let reverse2 = function(x) {    
   let negative = x < 0;
   let reversed = 0;
@@ -44,7 +44,8 @@ let reverse2 = function(x) {
   return negative ? (reversed * -1) : reversed;
 };
 
-const output = reverse2(-153469);
+
+const output = reverse2(-123);
 console.log(output);
 
 
