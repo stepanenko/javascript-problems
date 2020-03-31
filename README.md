@@ -1,6 +1,6 @@
 ## Javascript Problems
 
-- LeetCode
+- [LeetCode](https://leetcode.com/)
 - HackerRank
 - CodeWars
 - [CodinGame](https://www.codingame.com/home)
