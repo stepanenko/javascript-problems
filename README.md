@@ -1,7 +1,7 @@
 ## Javascript Problems
 
 - [LeetCode](https://leetcode.com/)
-- HackerRank
+- [HackerRank](https://www.hackerrank.com/)
 - CodeWars
 - [CodinGame](https://www.codingame.com/home)
 
