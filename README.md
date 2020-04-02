@@ -2,7 +2,7 @@
 
 - [LeetCode](https://leetcode.com/)
 - [HackerRank](https://www.hackerrank.com/)
-- CodeWars
+- [CodeWars](https://www.codewars.com/)
 - [CodinGame](https://www.codingame.com/home)
 
 
